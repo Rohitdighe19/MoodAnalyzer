@@ -3,15 +3,15 @@ package analyzer.moodAnalyzer;
 
 public class MoodAnalyzer 
 {
+	private static String message;
+	public static String MoodAnalyzer() {
+		return "SAD";
+	}
+	
+	public static String MoodAnalyzer(String message) {
+		return "Sad";
+	}
 
-	public String analyseMood(String message) {
-		if(message.contains("Sad")) {
-			System.out.println("SAD");
-			return "SAD";
-		}
-		else {
-			System.out.println("HAPPY");		
-			return "HAPPY";	
-		}
-	}	
+	
+	
 }
